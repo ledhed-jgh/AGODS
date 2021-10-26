@@ -7,11 +7,11 @@ You may be asking youself why the need for an air gapped object detection sensor
 # Privacy:
 * Raspberry Pi is not network connected
   - If your IoT network is hacked, they can't get to these sensors
-  - No way of streaming camera footage or capturing images
-* Images are not stored to disk, except when in --debug mode
-* Overlay File System, prolongs SD Card lifespan, but also means that anything written to disk is destroyed upon reboot/power cycle.
-  - For example, if someone were to steel it off the wall, the power would be cut and --debug images would not survive
-* Alarm contact can be used like any traditional home security motion sensor
+  - No way of streaming camera footage or capturing images remotely
+* Images are not stored to disk except when in --debug mode
+* Overlay File System prolongs SD Card lifespan, but also means that anything written to disk is destroyed upon reboot/power cycle.
+  - For example, if someone were to steel it off the wall, the power would be cut and --debug images would not survive.
+* Alarm contact can be used like any traditional home security motion sensor. PIR and Person detection trigger the alarm contact.
 
 # Features:
 * AGODS HAT
@@ -56,6 +56,12 @@ You may be asking youself why the need for an air gapped object detection sensor
 * Hot Glue Gun
 
 
+# Recommendations
+* Disable WiFi.
+* If network access is needed
+  - Set a static IP on the ethernet interface outside of your normal network range, and don't assign a gateway.
+  - Patch directly from the AGODS to your computer and access it via SSH (SSH is not enabled by default).
+
 Changes:
 - Initial Release: 0.0.1
 <br/>
@@ -72,13 +78,12 @@ Changes:
 <br/>
 
 ## :camera: Screenshots and Pictuers
-Pictures to come
+### PCB / Bread Boarding
+![Breadboard](docs/AGODS_Breadboard_v1.0.svg)
+![PCB](docs/AGODS_PCB_v1.0.svg)
 
 ## AGODS HAT
 ![AGODS HAT](docs/lovelace-cards-03.png)
-
-### PCB / Bread Boarding
-![PCB](docs/heatermeter-reference.png)
 
 ### Case Mods
 ![Case Mods](docs/mobile-app-notification.png)

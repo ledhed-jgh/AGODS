@@ -1,0 +1,11 @@
+[Unit]
+Description=Air Gapped Object Detection Sensor
+
+[Service]
+WorkingDirectory=/home/pi/AGODS
+ExecStart=sh -c "/usr/bin/sudo /usr/bin/python3 /home/pi/AGODS/object_detect.py"
+User=pi
+Group=pi
+
+[Install]
+WantedBy=multi-user.target

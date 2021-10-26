@@ -1,0 +1,11 @@
+[Unit]
+Description=PIR Motion Detection Sensor
+
+[Service]
+WorkingDirectory=/home/pi
+ExecStart=sh -c "/usr/bin/sudo /usr/bin/python3 /home/pi/AGODS/motion_detect.py"
+User=pi
+Group=pi
+
+[Install]
+WantedBy=multi-user.target

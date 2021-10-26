@@ -72,7 +72,6 @@ Changes:
 <br/>
 
 ## :camera: Screenshots and Pictuers
-![Pictures]
 Pictures to come
 
 ## AGODS HAT

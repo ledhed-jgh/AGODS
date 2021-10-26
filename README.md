@@ -92,9 +92,7 @@ Changes:
 * Download or git clone AGODS
 * Run setup.sh
 
-
 [:top:](#bookmark_tabs-table-of-contents)
-<br/>
 <br/>
 
 ## References

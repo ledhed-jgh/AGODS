@@ -72,6 +72,8 @@ Changes:
 <br/>
 
 ## :camera: Screenshots and Pictuers
+![Pictures]
+Pictures to come
 
 ## AGODS HAT
 ![AGODS HAT](docs/lovelace-cards-03.png)

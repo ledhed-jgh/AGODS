@@ -80,6 +80,7 @@ Changes:
 ## :camera: Screenshots and Pictuers
 ### PCB / Bread Boarding
 ![Breadboard](docs/AGODS_Breadboard_v1.0.svg)
+<br/>
 ![PCB](docs/AGODS_PCB_v1.0.svg)
 
 ## AGODS HAT

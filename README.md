@@ -79,8 +79,7 @@ Changes:
 
 ## :camera: Screenshots and Pictuers
 ### PCB / Bread Boarding
-![Breadboard](docs/AGODS_Breadboard_v1.0.svg)
-<br/>
+![Breadboard](docs/AGODS_Breadboard_v1.0.svg)<br/>
 ![PCB](docs/AGODS_PCB_v1.0.svg)
 
 ## AGODS HAT
@@ -89,11 +88,17 @@ Changes:
 ![AGODS HAT: Left](docs/AGODS_HAT_Left.jpg)
 ![AGODS HAT: Right](docs/AGODS_HAT_Right.jpg)
 
-### Case Mods
-![Case Mods](docs/mobile-app-notification.png)
+## Enclosure
+![Enclosure: Front Open](docs/docs/AGODS_Enclosure_Front_Open.jpg)
+![Enclosure: Front](docs/docs/AGODS_Enclosure_Front.jpg)
+![Enclosure: Back](docs/docs/AGODS_Enclosure_Back.jpg)
+![Enclosure: Left](docs/docs/AGODS_Enclosure_Left.jpg)
 
-### Mobile App Cards
-![3DPrints](docs/mobile-app-card-view.png)  
+### Case Mods
+![Case Mods Inside](docs/Case_Mod_Inside.jpg)
+![Case Mods AV Port](docs/Case_Mod_AV.jpg)
+
+
 [:top:](#bookmark_tabs-table-of-contents)
 <br/>
 <br/>

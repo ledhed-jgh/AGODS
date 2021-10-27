@@ -84,7 +84,10 @@ Changes:
 ![PCB](docs/AGODS_PCB_v1.0.svg)
 
 ## AGODS HAT
-![AGODS HAT](docs/lovelace-cards-03.png)
+![AGODS HAT: Front](docs/AGODS_HAT_Front.jpg)
+![AGODS HAT: Back](docs/AGODS_HAT_Back.jpg)
+![AGODS HAT: Left](docs/AGODS_HAT_Left.jpg)
+![AGODS HAT: Right](docs/AGODS_HAT_Right.jpg)
 
 ### Case Mods
 ![Case Mods](docs/mobile-app-notification.png)

@@ -80,19 +80,26 @@ Changes:
 ## :camera: Screenshots and Pictuers
 ### PCB / Bread Boarding
 ![Breadboard](docs/AGODS_Breadboard_v1.0.svg)<br/>
+Note: The pin out on the PIR is different than the SR602, I couldn't find a part for it in Fritzing. Adjust accordingly if using a SR602.
 ![PCB](docs/AGODS_PCB_v1.0.svg)
+This diagram has the correct pin out for the SR602 (no adjustments necessary, unless you use a different PIR sensor).
 
 ## AGODS HAT
 ![AGODS HAT: Front](docs/AGODS_HAT_Front.jpg)
 ![AGODS HAT: Back](docs/AGODS_HAT_Back.jpg)
 ![AGODS HAT: Left](docs/AGODS_HAT_Left.jpg)
 ![AGODS HAT: Right](docs/AGODS_HAT_Right.jpg)
+![AGODS HAT: Installed Front](docs/AGODS_HAT_Installed_Front.jpg)
+![AGODS HAT: Installed Left](docs/AGODS_HAT_Installed_Left.jpg)
+![AGODS HAT: Installed Right](docs/AGODS_HAT_Installed_Right.jpg)
 
 ## Enclosure
-![Enclosure: Front Open](docs/docs/AGODS_Enclosure_Front_Open.jpg)
-![Enclosure: Front](docs/docs/AGODS_Enclosure_Front.jpg)
-![Enclosure: Back](docs/docs/AGODS_Enclosure_Back.jpg)
-![Enclosure: Left](docs/docs/AGODS_Enclosure_Left.jpg)
+![Enclosure: Front Open](docs/AGODS_Enclosure_Front_Open.jpg)
+![Enclosure: With Camera](docs/AGODS_Enclosure_Open_Cam.jpg)
+![Enclosure: Front](docs/AGODS_Enclosure_Front.jpg)
+![Enclosure: Back](docs/AGODS_Enclosure_Back.jpg)
+![Enclosure: Left](docs/AGODS_Enclosure_Left.jpg)
+![Enclosure: Left](docs/AGODS_Enclosure_Open_Cam.jpg)
 
 ### Case Mods
 ![Case Mods Inside](docs/Case_Mod_Inside.jpg)

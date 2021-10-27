@@ -99,7 +99,6 @@ This diagram has the correct pin out for the SR602 (no adjustments necessary, un
 ![Enclosure: Front](docs/AGODS_Enclosure_Front.jpg)
 ![Enclosure: Back](docs/AGODS_Enclosure_Back.jpg)
 ![Enclosure: Left](docs/AGODS_Enclosure_Left.jpg)
-![Enclosure: Left](docs/AGODS_Enclosure_Open_Cam.jpg)
 
 ### Case Mods
 ![Case Mods Inside](docs/Case_Mod_Inside.jpg)

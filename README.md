@@ -110,7 +110,8 @@ This diagram has the correct pin out for the SR602 (no adjustments necessary, un
 <br/>
 
 ## Getting started
-* Download or git clone AGODS
+* Install Raspbian Lite
+* Download or clone AGODS to 
 * Run setup.sh
 
 [:top:](#bookmark_tabs-table-of-contents)

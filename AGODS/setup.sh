@@ -1,15 +1,12 @@
 #!/bin/bash
-# Install Dependencies
-sudo apt update && sudo apt -y install git libopenjp2-7 libtiff5 python3 python3-pip python3-pip python3-pil python3-picamera
-
 # Add coral repo
 echo "deb https://packages.cloud.google.com/apt coral-edgetpu-stable main" | sudo tee /etc/apt/sources.list.d/coral-edgetpu.list
 
 # Add google gpg key
 curl https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo apt-key add -
 
-# Install TensorFlow Lite
-sudo apt update && sudo apt -y install python3-tflite-runtime
+# Update, Install TensorFlow Lite + Dependencies
+sudo apt update && sudo apt -y install git libopenjp2-7 libtiff5 python3 python3-pip python3-pip python3-pil python3-picamera python3-tflite-runtime
 
 # Move INI file to /boot
 sudo chmod 755 agods.ini

@@ -80,9 +80,12 @@ Changes:
 ## :camera: Screenshots and Pictuers
 ### PCB / Bread Boarding
 ![Breadboard](docs/AGODS_Breadboard_v1.0.svg)<br/>
-Note: The pin out on the PIR is different than the SR602, I couldn't find a part for it in Fritzing. Adjust accordingly if using a SR602.
-![PCB](docs/AGODS_PCB_v1.0.svg)
-This diagram has the correct pin out for the SR602 (no adjustments necessary, unless you use a different PIR sensor).
+Note: The pin out on the PIR is different than the SR602, I couldn't find a part for it in Fritzing. Adjust accordingly if using a SR602.<br/><br/>
+![PCB](docs/AGODS_PCB_v1.0.svg)<br/>
+This diagram has the correct pin out for the SR602 (no adjustments necessary, unless you use a different PIR sensor). Note this PCB diagram is untested and measurements are approximate.
+### Use at your own risk!
+
+<br/>
 
 ## AGODS HAT
 ![AGODS HAT: Front](docs/AGODS_HAT_Front.jpg)

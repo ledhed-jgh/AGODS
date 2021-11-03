@@ -111,8 +111,10 @@ This diagram has the correct pin out for the SR602 (no adjustments necessary, un
 
 ## Getting started
 * Install Raspbian Lite
-* Download or clone AGODS to 
-* Run setup.sh
+* Clone AGODS or download and extract to /home/pi/
+* Run ```/home/pi/AGODS/setup.sh```
+* Modify ```/boot/agods.ini``` (if necessary)
+* Run ```sudo raspi-config``` and enable Overlay file system (optional but recommended)
 
 [:top:](#bookmark_tabs-table-of-contents)
 <br/>

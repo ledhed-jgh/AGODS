@@ -10,7 +10,7 @@ You may be asking youself why the need for an air gapped object detection sensor
   - No way of streaming camera footage or capturing images remotely
 * Images are not stored to disk except when in --debug mode
 * Overlay File System prolongs SD Card lifespan, but also means that anything written to disk is destroyed upon reboot/power cycle.
-  - For example, if someone were to steel it off the wall, the power would be cut and --debug images would not survive.
+  - For example, if someone were to steal it off the wall, the power would be cut and --debug images would not survive.
 * Alarm contact can be used like any traditional home security motion sensor. PIR and Person detection trigger the alarm contact.
 
 # Features:

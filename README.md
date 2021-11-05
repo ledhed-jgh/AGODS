@@ -14,7 +14,7 @@ You may be asking youself why the need for an air gapped object detection sensor
 * Alarm contact can be used like any traditional home security motion sensor. PIR and Person detection trigger the alarm contact.
 
 # Features:
-* AGODS HAT
+* AGODS Hat
   - PIR Motion Sensor
   - Activity LED
   - Alarm dry contact
@@ -53,7 +53,7 @@ You may be asking youself why the need for an air gapped object detection sensor
   - Plastic Stand-Off (can be 3D Printed)
 
 # Optional
-* Motion Detector Enclosure / Donor Device (https://www.amazon.com/Kenuco-Analog-Covert-Motion-Detector/dp/B072BXK1QP)
+* Motion Detector Enclosure / Donor Device (https://www.amazon.com/gp/product/B072BXK1QP)
   - Other enclosures may be suitable but the 3D Printed parts likely won't work.
 * Basic case modding skills (you're gonna want a Dremmel!)
 * 3D Printer
@@ -107,7 +107,7 @@ This diagram has the correct pin out for the SR602 (no adjustments necessary, un
 ![Enclosure: Back](docs/AGODS_Enclosure_Back.jpg)
 ![Enclosure: Left](docs/AGODS_Enclosure_Left.jpg)
 
-### Case Mods
+## Case Mods
 ![Case Mods Inside](docs/Case_Mod_Inside.jpg)
 ![Case Mods AV Port](docs/Case_Mod_AV.jpg)
 
@@ -123,10 +123,67 @@ This diagram has the correct pin out for the SR602 (no adjustments necessary, un
 * Modify ```/boot/agods.ini``` (if necessary)
 * Run ```sudo raspi-config``` and enable Overlay file system (optional but recommended)
 
+## agods.ini
+agods.ini is the configuration located at /boot/agods.ini.  It's located on /boot to make editing configs easer, since /boot is a FAT filesystem.
+<br/>
+
+[Camera]
+| Setting  | Description |
+| ------------- | ------------- |
+| width  | Image width  |
+| height  | Image height  |
+| rotation  | Image rotation  |
+| brightness  | Image brightness  |
+
+The model used by default is based on 300x300 pixel images. Capturing at higher resolutions won't yield better results, and increases processing time.
+Image height and width should be divisible by 32 hence the default width of 368 rather than 360. This is due to the pixel data being stored in an array.
+
+[Object Detection]
+| Setting  | Description |
+| ------------- | ------------- |
+| threshold  | TensorFlow confidence threshold  |
+| categories  | Categories to detect: 0.0 = Person, 16.0 = Cat, 17.0 = Dog, etc...  |
+| label_file  | TensorFlow label file used to label detected objects  |
+| model_file  | TensorFlow Lite models  |
+| interval  | Interval (in seconds) at which objects are detected  |
+
+Categories should be a comma separated list of single decimal numbers.  These numbers correspond to the indexes in the label_file.
+For example:
+````
+0  person
+1  bicycle
+2  car
+````
+To detect persons and bicycles your would set
+````
+categories = 0.0,1.0
+````
+
+[Other]
+| Setting  | Description |
+| ------------- | ------------- |
+| logging  | Log motion and object detections to file  |
+| log_file  | Full path to log file  |
+
+
+
 [:top:](#bookmark_tabs-table-of-contents)
 <br/>
 
 ## References
-TensorFlow Lite. See https://github.com/CapnBry/HeaterMeter/wiki/Accessing-Raw-Data-Remotely
-Parts. https://community.home-assistant.io/t/heatermeter-integration/14696/22  
+TensorFlow Lite:<br/> https://github.com/CapnBry/HeaterMeter/wiki/Accessing-Raw-Data-Remotely
+<br/>
+Parts:
+* SR602 PIR - https://www.amazon.com/gp/product/B07VLFL5VP
+* PC817 Optocoupler - https://www.amazon.com/gp/product/B07K1PW21P
+* 12v Buck Converter - https://www.amazon.com/gp/product/B08Q3PMJTT
+* Kit (PCB, LED, Terminals, Headers, Resistors) - https://www.amazon.com/gp/product/B07QC5X21L
+* The above kit is cheaper than buying the components individually and should yield enough components to build 4 Hats.
+  - Resistors - https://www.amazon.com/gp/product/B07D2Z45CG
+  - Terminal Blocks - https://www.amazon.com/gp/product/B088LVP6ML
+  - LEDs - https://www.amazon.com/gp/product/B07HFT7LNP
+  - PCBs & Headers - https://www.amazon.com/gp/product/B07C3TC68Z
+* Enclosure/Donor Device - (https://www.amazon.com/gp/product/B072BXK1QP)
+
+https://community.home-assistant.io/t/heatermeter-integration/14696/22  
 [:top:](#bookmark_tabs-table-of-contents)

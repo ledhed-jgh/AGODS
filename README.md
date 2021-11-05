@@ -18,6 +18,10 @@ You may be asking youself why the need for an air gapped object detection sensor
   - PIR Motion Sensor
   - Activity LED
   - Alarm dry contact
+  * Wiring & Power
+    - Wired like a traditional home security motion sensor with 4 conductor wire.
+    - Runs on 12v (or as little as 5v by adjusting the buck converter).
+    - Drop in replacement for an existing home security motion sensor.
 * Debug Mode
   - Images are written to disk (but will not survive a reboot if OverlayFS is enabled and Boot Partition is set to Read Only)
   - Motion Detection and Object Detections are logged to console

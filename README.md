@@ -184,6 +184,5 @@ Parts:
   - LEDs - https://www.amazon.com/gp/product/B07HFT7LNP
   - PCBs & Headers - https://www.amazon.com/gp/product/B07C3TC68Z
 * Enclosure/Donor Device - (https://www.amazon.com/gp/product/B072BXK1QP)
-
-https://community.home-assistant.io/t/heatermeter-integration/14696/22  
+ 
 [:top:](#bookmark_tabs-table-of-contents)

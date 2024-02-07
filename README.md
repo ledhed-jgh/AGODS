@@ -171,7 +171,7 @@ categories = 0.0,1.0
 <br/>
 
 ## References
-TensorFlow Lite:<br/> https://github.com/CapnBry/HeaterMeter/wiki/Accessing-Raw-Data-Remotely
+TensorFlow:<br/> https://github.com/tensorflow/tensorflow
 <br/>
 Parts:
 * SR602 PIR - https://www.amazon.com/gp/product/B07VLFL5VP
